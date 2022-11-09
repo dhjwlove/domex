@@ -6,22 +6,12 @@ const PORT = 8888;
 
 app.use(express.static('public'));
 
-app.get("/", (req, res) => { 
+app.use(express.static('src'));
+
+app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, '../index.html'));
 })
 
-app.get("/src/index", (req, res) => { 
-  res.sendFile(path.join(__dirname, '../src/index.js'));
-})
-
-app.get("/src/*", (req, res) => { 
-  res.sendFile(path.join(__dirname, '../src/App.js'));
-})
-
-// app.get("/src/index.js", (req, res) => { 
-//   res.sendFile(path.join(__dirname, '../src/index.js'));
-// })
-
-app.listen(PORT, () => { 
+app.listen(PORT, () => {
   console.log(`Listen : ${PORT}`)
 })

@@ -1,5 +1,3 @@
-import App from './src/App.js';
+import App from './App.js';
 
 new App({ $target: document.getElementById('root') });
-
-console.log('DDDD');
