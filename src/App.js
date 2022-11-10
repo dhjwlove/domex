@@ -1,7 +1,7 @@
 // console.log(document)
-import ProductListPage from "./page/ProductListPage.js";
-import ProductDetailPage from './page/ProductDetailPage.js';
-import CartPage from './page/CartPage.js';
+import ProductListPage from "./pages/ProductListPage.js";
+import ProductDetailPage from './pages/ProductDetailPage.js';
+import CartPage from './pages/CartPage.js';
 
 export default function App({ $target }) {
     this.route = () => {
