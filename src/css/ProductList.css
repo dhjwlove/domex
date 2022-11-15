@@ -1,0 +1,35 @@
+.Product_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: auto;
+}
+.Product {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 240px;
+    margin: 5px;
+}
+.Product_img {
+    flex: auto;
+    width: 120px;
+    margin: auto;
+    margin-top: 10px;
+}
+.Product_info{
+    flex: auto;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Product_name {
+    flex: auto;
+    padding-left: 10px;
+}
+
+.Product_price {
+    flex: auto;
+    text-align: right;
+    padding-right: 10px;
+}

@@ -6,7 +6,7 @@ const productListJson = require('./coffee_product_list.json')
 
 app.use('/static', express.static('public'));
 
-app.get('/coffeeProducts', (req, res) => {
+app.get('/productList', (req, res) => {
   res.send(200, productListJson);
 })
 
@@ -18,5 +18,5 @@ app.get("*", (req, res) => {
 })
 
 app.listen(PORT, () => {
-  console.log(`Listen : ${PORT}`)
+  console.log(`Listen : ${PORT}`);
 })

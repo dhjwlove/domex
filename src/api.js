@@ -1,4 +1,4 @@
-const API_END_POINT = "localhost:8888";
+const API_END_POINT = "http://localhost:8888";
 
 export const request = async (url, options = {}) => {
     try {
@@ -6,8 +6,10 @@ export const request = async (url, options = {}) => {
         const response = await fetch(fullUrl, options)
 
         if(response.ok) {
-            
+            const json = await response.json();
+            return json;
         }
+        throw new Error('API 통신 실패');
     } catch(e) {
         alert(e.message)
     }
