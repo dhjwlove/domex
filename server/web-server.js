@@ -2,8 +2,13 @@ const express = require("express");
 const path = require("path");
 const app = express();
 const PORT = 8888;
+const productListJson = require('./coffee_product_list.json')
 
-app.use(express.static('public'));
+app.use('/static', express.static('public'));
+
+app.get('/coffeeProducts', (req, res) => {
+  res.send(200, productListJson);
+})
 
 app.use('/src', express.static('src'));
 

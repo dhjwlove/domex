@@ -1,0 +1,62 @@
+[
+    {
+        "name": "커피 컵",
+        "price": "10000",
+        "imgUrl": "/static/imgs/coffee_cup.png"
+    }, 
+    {
+        "name": "커피컵 종이폴더",
+        "price": "1000",
+        "imgUrl": ""
+    },
+    {
+        "name": "커피머신",
+        "price": "500000",
+        "imgUrl": ""
+    },
+    {
+        "name": "우유 거품기",
+        "price": "20000",
+        "imgUrl": ""
+    },
+    {
+        "name": "우유용 컵",
+        "price": "10000",
+        "imgUrl": ""
+    },
+    {
+        "name": "그렙 커피",
+        "price": "3000",
+        "imgUrl": ""
+    },
+    {
+        "name": "에스프레소 메이커",
+        "price": "50000",
+        "imgUrl": ""
+    },
+    {
+        "name": "냉동 센드위치",
+        "price": "10000",
+        "imgUrl": ""
+    },
+    {
+        "name": "티 메이커",
+        "price": "35000",
+        "imgUrl": ""
+    },
+    {
+        "name": "각설탕 우유",
+        "price": "500",
+        "imgUrl": ""
+    },
+    {
+        "name": "커피시럽",
+        "price": "500",
+        "imgUrl": ""
+    },
+    {
+        "name": "에스프레소 머신",
+        "price": "300000",
+        "imgUrl": ""
+    }
+]
