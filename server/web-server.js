@@ -10,6 +10,9 @@ app.get('/productList', (req, res) => {
   res.send(200, productListJson);
 })
 
+app.get('/products/:id', (req, res) => {
+})
+
 app.use('/src', express.static('src'));
 
 app.get("*", (req, res) => {

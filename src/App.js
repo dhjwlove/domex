@@ -2,6 +2,7 @@
 import ProductListPage from "./pages/ProductListPage.js";
 import ProductDetailPage from './pages/ProductDetailPage.js';
 import CartPage from './pages/CartPage.js';
+import { init } from './utils/router.js';
 
 export default function App({ $target }) {
     this.route = () => {
@@ -23,6 +24,11 @@ export default function App({ $target }) {
             }).render();
         }
     }
+    
+    init(this.route);
 
     this.route();
+
+    // window.addEventListener('popstate', this.route)
+    window.onpopstate = this.route;
 }

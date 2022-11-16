@@ -1,60 +1,72 @@
 [
-    {
+    {   
+        "id": 1,
         "name": "커피 컵",
         "price": "10000",
         "imageUrl": "http://localhost:8888/static/imgs/coffee_cup.png"
     }, 
     {
+        "id": 2,
         "name": "커피컵 종이폴더",
         "price": "1000",
         "imageUrl": "http://localhost:8888/static/imgs/coffee_cup_holder.jpg"
     },
     {
+        "id": 3,
         "name": "커피머신",
         "price": "500000",
         "imageUrl": "http://localhost:8888/static/imgs/coffee_machine.jpg"
     },
     {
+        "id": 4,
         "name": "우유 거품기",
         "price": "20000",
         "imageUrl": "http://localhost:8888/static/imgs/milk_frother.jpg"
     },
     {
+        "id": 5,
         "name": "우유용 컵",
         "price": "10000",
         "imageUrl": "http://localhost:8888/static/imgs/milk_cup.png"
     },
     {
+        "id": 6,
         "name": "그렙 커피",
         "price": "3000",
         "imageUrl": "http://localhost:8888/static/imgs/grap_coffee.jpg"
     },
     {
+        "id": 7,
         "name": "에스프레소 메이커",
         "price": "50000",
         "imageUrl": "http://localhost:8888/static/imgs/espresso_maker.png"
     },
     {
+        "id": 8,
         "name": "냉동 센드위치",
         "price": "10000",
         "imageUrl": "http://localhost:8888/static/imgs/sandwitch.webp"
     },
     {
+        "id": 9,
         "name": "티 메이커",
         "price": "35000",
         "imageUrl": "http://localhost:8888/static/imgs/tea_maker.webp"
     },
     {
+        "id": 10,
         "name": "각설탕 우유",
         "price": "500",
         "imageUrl": "http://localhost:8888/static/imgs/sugar.jpg"
     },
     {
+        "id": 11,
         "name": "커피시럽",
         "price": "500",
         "imageUrl": "http://localhost:8888/static/imgs/coffee_syrup.png"
     },
     {
+        "id": 12,
         "name": "에스프레소 머신",
         "price": "300000",
         "imageUrl": "http://localhost:8888/static/imgs/espresso_machine.jpg"

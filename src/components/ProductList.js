@@ -1,5 +1,7 @@
+import { routeChange } from "../utils/router.js";
+
 export default function ProductList({$target, initialState}) {
-    const $productList = document.createElement('div');
+    const $productList = document.createElement('ul');
     $productList.className = 'Product_wrapper'
     $target.appendChild($productList)
 
@@ -18,16 +20,25 @@ export default function ProductList({$target, initialState}) {
         $productList.innerHTML = `
         ${this.state.map(product => 
             `
-            <div class="Product">
-                <img class="Product_img" src="${product.imageUrl}">
-                <div class="Product_info">
-                    <div class="Product_name">${product.name}</div>
-                    <div class="Product_price">${product.price}~</div>
-                </div>
-            </div>
+            <li class="Product" data-product-id="${product.id}">
+                    <img class="Product_img" src="${product.imageUrl}">
+                    <div class="Product_info">
+                        <div class="Product_name">${product.name}</div>
+                        <div class="Product_price">${product.price}~</div>
+                    </div>
+            </li>
             `
         ).join('')}`
     }
     
     this.render();
+
+    $productList.addEventListener('click', (e) => {
+        const $li = e.target.closest('li');
+        const { productId } = $li.dataset;
+
+        if(productId) {
+            routeChange(`/products/${productId}`)
+        }
+    })
 }
